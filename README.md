@@ -20,18 +20,21 @@ And the client used for the requests was a PC with 8 GB RAM and 4 CPU Cores (Win
 
 ### **Average requests per second**
 ![req-sec](/docs/charts/req-sec.png)
+
 Bun server and Rust server had similar results, but with Bun slightly ahead of the rest, Node.js was far behind in the number of requests per second.
 
 ***
 
 ### **Average requests per second**
 ![req-sec](/docs/charts/kb-sec.png)
+
 Results in this test were very similar to the previous one, but with a greater advantage of Bun over Rust.
 
 ***
 
 ### **Average Latency**
 ![latency](/docs/charts/latency.png)
+
 In this test, the highest latency by far was the Node.js server, while Rust and Bun were very close with low numbers.
 
 **Full Results in docs folder**
