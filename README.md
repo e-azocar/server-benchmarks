@@ -37,4 +37,25 @@ Results in this test were very similar to the previous one, but with a greater a
 
 In this test, the highest latency by far was the Node.js server, while Rust and Bun were very close with low numbers.
 
-**Full Results in docs folder**
+
+|| Bun.js | NodeJS | Rust |
+|-----------------------------------------------------------------|----------------------|--------------------------|----------------------------|
+| Uses controllers and middleware? | ✔ | ✔ | ✔ |
+| Can connect to postgresql? | ✔ | ✔ | ✔ |
+| Does have OpenAPI integration? ||||
+| Does it work with CORS? | ✔ | ✔ | ✔ |
+| Does it uses JWT with encryption? ||||
+| Can use Auth0, Passport or any external service for Auth? ||||
+| Does it manages ENV variables in a separate config? | ✔ | ✔ | ✔ |
+| Can send emails? ||||
+| Can create or process PDFs in the server? ||||
+| Can create, read or process CSVs? ||||
+| Average Request per seconds (10 concurrent requests) | **178.1** | **141.6** | **160.6** |
+| Average Request per seconds (1000 concurrent requests) | **3530.8** | **2959.2** | **3120** |
+| Average Request per seconds (10000 concurrent requests) | **2843.1** | **2286.81** | **2678.3** |
+| Average kb/s (10 concurrent requests) | **47.2 kb/s** | **39.8 kb/s** | **19.8 kB** |
+| Average kb/s (1000 concurrent requests) | **936 kb/s** | **831 kb/s** | **328 kb/s** |
+| Average kb/s (10000 concurrent requests) | **753 kb/s** | **642 kb/s** | **329 kb/s** |
+| Average latency (ms) (10 concurrent requests) | **55.65 ms** | **69.79 ms** | **64.18 ms** |
+| Average latency (ms) (1000 concurrent requests) | **56.66 ms** | **67.62 ms** | **74.6 ms** |
+| Average latency (ms) (10000 concurrent requests) | **75.6 ms** | **91.21 ms** | **76.53 ms** |
