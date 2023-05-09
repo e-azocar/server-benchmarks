@@ -45,7 +45,7 @@ In this test, the highest latency by far was the Node.js server, while Rust and 
 | Does have OpenAPI integration? | ✔ | ✔ | ✔ |
 | Does it work with CORS? | ✔ | ✔ | ✔ |
 | Does it uses JWT with encryption? | ✔ | ✔ | ✔ |
-| Can use Auth0, Passport or any external service for Auth? ||||
+| Can use Auth0, Passport or any external service for Auth? || ✔ | ✔ |
 | Does it manages ENV variables in a separate config? | ✔ | ✔ | ✔ |
 | Can send emails? ||||
 | Can create or process PDFs in the server? ||||
