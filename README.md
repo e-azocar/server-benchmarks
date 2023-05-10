@@ -41,15 +41,15 @@ In this test, the highest latency by far was the Node.js server, while Rust and 
 || Bun.js | NodeJS | Rust |
 |-----------------------------------------------------------------|----------------------|--------------------------|----------------------------|
 | Uses controllers and middleware? | ✔ | ✔ | ✔ |
-| Can connect to postgresql? | ✔* | ✔ | ✔ |
-| Does have OpenAPI integration? | ✔ | ✔ | ✔ |
-| Does it work with CORS? | ✔ | ✔ | ✔ |
-| Does it uses JWT with encryption? | ✔ | ✔ | ✔ |
+| Can connect to postgresql? | ✔* (pg) | ✔ (pg) | ✔ (sqlx) |
+| Does have OpenAPI integration? | ✔ (@elysiajs/swagger) | ✔ (swagger-ui-express) | ✔ (utoipa) |
+| Does it work with CORS? | ✔ (@elysiajs/cors) | ✔ (cors) | ✔ (tower_http) |
+| Does it uses JWT with encryption? | ✔ (@elysiajs/jwt) | ✔ (jwt) | ✔ (jsonwebtoken) |
 | Can use Auth0, Passport or any external service for Auth? | ✔* | ✔ | ✔ |
 | Does it manages ENV variables in a separate config? | ✔ | ✔ | ✔ |
-| Can send emails? | ✔* | ✔ | ✔ |
-| Can create or process PDFs in the server? | ✔* | ✔ | ✔ |
-| Can create, read or process CSVs? | ✔* | ✔ | ✔ |
+| Can send emails? | ✔* (nodemailer) | ✔ (nodemailer) | ✔ (lettre) |
+| Can create or process PDFs in the server? | ✔* (pdfkit) | ✔ (pdfkit) | ✔ (genpdf) |
+| Can create, read or process CSVs? | ✔* (csv-parser) | ✔ (csv-parser) | ✔ (csv) |
 | Average Request per seconds (10 concurrent requests) | **178.1** | **141.6** | **160.6** |
 | Average Request per seconds (1000 concurrent requests) | **3530.8** | **2959.2** | **3120** |
 | Average Request per seconds (10000 concurrent requests) | **2843.1** | **2286.81** | **2678.3** |
